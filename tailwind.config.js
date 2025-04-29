@@ -11,10 +11,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        black: {
-          DEFAULT: "#000",
-          100: "#000319",
-        },
+        background: "#121212",
+        primary: "#F4F4F4",
+        accent1: "#5DA9A4", // Dusty teal
+        accent2: "#C48A93", // Taupe
       },
     },
   },
