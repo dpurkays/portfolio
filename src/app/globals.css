@@ -14,3 +14,7 @@ body {
 .section-title {
   @apply text-2xl font-bold md:text-4xl text-accent1;
 }
+
+.section-subheader {
+  @apply md:text-lg text-accent2 font-semibold py-2;
+}
