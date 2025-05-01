@@ -6,3 +6,11 @@ html,
 body {
   height: 100%;
 }
+
+.section-style {
+  @apply min-h-screen md:min-h-[70vh] flex justify-center px-4;
+}
+
+.section-title {
+  @apply text-2xl font-bold md:text-4xl text-accent1;
+}
