@@ -6,12 +6,12 @@ function About() {
   return (
     <section
       id="about"
-      className="section-style flex-col justify-center items-center gap-4 md:gap-6 mx-auto p-8 pb-20 sm:p-20"
+      className="section-style flex-col justify-center items-center gap-4 md:gap-6 mx-auto p-8 pb-20"
     >
       <h2 id="about" className="section-title">
         Meet Dula
       </h2>
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-4 md:w-4/5">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-4 xl:w-3/5">
         <Image
           src={dulaImage}
           alt="Picture of Dula"
