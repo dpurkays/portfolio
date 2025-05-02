@@ -2,9 +2,9 @@ import Fireflies from "./Fireflies"; // ✅ default import
 
 function Hero() {
   return (
-    <section className="relative w-full section-style items-center ">
+    <div className="relative w-full section-style items-center ">
       <Fireflies />
-      <div className="flex flex-col items-center text-center space-y-4 z-10">
+      <section className="flex flex-col items-center text-center space-y-4 z-10">
         <h1 className="text-3xl font-bold md:text-5xl">
           Hi, I'm <span className="text-accent1">Dula Purkaystha</span>
         </h1>
@@ -18,14 +18,14 @@ function Hero() {
         </p>
         <div className="p-[2px] bg-gradient-to-r from-accent1 to-accent2 rounded-lg w-full md:w-fit">
           <a
-            href="#tech"
+            href="#about"
             className="bg-background text-accent1 rounded-lg px-6 py-3 font-medium flex items-center justify-center gap-2 hover:scale-[1.3] transition-transform duration-300"
           >
             Explore <span className="animate-bounce">↓</span>
           </a>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 

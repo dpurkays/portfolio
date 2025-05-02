@@ -8,7 +8,7 @@ export default function AboutPage() {
       <div className="section-style flex-col gap-4 md:gap-6 max-w-5xl">
         <section>
           <h2 id="about" className="section-title">
-            About Me
+            Meet Dula
           </h2>
           <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-4 md:gap-6">
             <Image
