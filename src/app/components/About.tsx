@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import dulaImage from "../../../public/dulapfp.png";
 
 function About() {
   return (
@@ -12,13 +10,13 @@ function About() {
         Meet Dula
       </h2>
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-4 xl:w-3/5">
-        <Image
+        {/* <Image
           src={dulaImage}
           alt="Picture of Dula"
           width={200}
           height={200}
-          className="object-cover rounded-full"
-        />
+          className="hidden md:block object-cover rounded-full"
+        /> */}
         <div className="flex flex-col gap-4">
           <p className="text-base md:text-lg">
             With a foundation in Psychology and a passion for tech, I
