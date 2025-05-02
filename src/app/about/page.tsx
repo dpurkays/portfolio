@@ -4,7 +4,7 @@ import TechStack from "../components/TechStack";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-background text-primary flex flex-col items-center justify-center px-4">
+    <main className="min-h-screen bg-background text-primary flex flex-col items-center justify-center px-4 py-12">
       <div className="section-style flex-col gap-4 md:gap-6 max-w-5xl">
         <section>
           <h2 id="about" className="section-title">
