@@ -39,7 +39,7 @@ function Header() {
               <li key={label}>
                 <Link
                   href={href}
-                  className="block px-4 py-2 rounded transition active:bg-accent1 cursor-pointer"
+                  className="block px-4 py-2 rounded transition hover:bg-accent1 cursor-pointer"
                 >
                   {label}
                 </Link>
