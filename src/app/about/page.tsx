@@ -30,12 +30,14 @@ export default function AboutPage() {
                 collaborative environments.
               </p>
               <p>
-                What I enjoy most about this field is the constant evolution;
+                What I enjoy most about this field is the constant evolution —
                 there’s always something new to learn or improve. Whether it’s
-                refining a user experience, fixing a tricky bug, or finding a
-                more thoughtful way to approach a problem, I find joy in the
-                process. I'm known for being detail-oriented, eager to grow, and
-                motivated by the opportunity to turn ideas into something real.
+                refining a user experience, fixing a tricky bug, or developing
+                an interactive feature, I find joy in turning complex problems
+                into clear, thoughtful solutions. My attention to detail and
+                ability to resolve issues quickly have been recognized in
+                fast-paced, team-driven projects, where I thrive on
+                collaboration and shared learning.
               </p>
               <p>
                 The transition into tech wasn’t always easy, but it’s been
@@ -49,7 +51,7 @@ export default function AboutPage() {
           </div>
         </section>
         <section>
-          <h2 id="about" className="section-title">
+          <h2 id="skills" className="section-title">
             Technical Skills
           </h2>
           <TechStack />

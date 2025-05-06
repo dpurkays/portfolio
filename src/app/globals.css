@@ -28,5 +28,9 @@ a {
 }
 
 .button-style {
-  @apply border border-accent1 text-accent1 hover:bg-accent1 hover:text-background transition-colors duration-200 px-6 py-2 rounded-lg;
+  @apply border border-accent1 text-accent1 font-medium hover:font-bold hover:bg-accent1 hover:text-box transition-colors duration-200 px-6 py-2 rounded-lg;
+}
+
+.pill {
+  @apply bg-box2 text-primary px-3 py-1 rounded-full text-xs hover:bg-accent1/80;
 }

@@ -13,6 +13,8 @@ module.exports = {
     extend: {
       colors: {
         background: "#0C0F1A",
+        box: "#121624",
+        box2: "#1E2333",
         primary: "#F4F4F4",
         accent1: "#14B8A6", // teal
         accent2: "#D9A5B3", // pinky lotus
