@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <Milestones styles="xl:w-3/5" />
+      <Milestones styles="section-style" />
     </main>
   );
 }

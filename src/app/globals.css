@@ -7,16 +7,16 @@ body {
   height: 100%;
 }
 
-li {
+/* li {
   list-style: none;
-}
+} */
 
 a {
   text-decoration: none;
 }
 
 .section-style {
-  @apply min-h-screen md:min-h-[70vh] flex justify-center px-4;
+  @apply max-w-6xl mx-auto px-4 pt-8 pb-16;
 }
 
 .section-title {

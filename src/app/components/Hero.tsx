@@ -2,7 +2,7 @@ import Fireflies from "./Fireflies"; // ✅ default import
 
 function Hero() {
   return (
-    <div className="relative w-full h-screen section-style items-center ">
+    <div className="relative w-full h-screen min-h-screen md:min-h-[70vh] flex justify-center px-4 items-center ">
       <Fireflies />
       <section className="flex flex-col items-center text-center space-y-4 z-10">
         <h1 className="text-5xl font-bold md:text-7xl">

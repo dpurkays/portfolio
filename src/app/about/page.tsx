@@ -6,7 +6,7 @@ import TechStack from "../components/TechStack";
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background text-primary flex flex-col items-center justify-center px-4 py-12">
-      <div className="section-style flex-col gap-4 md:gap-6 max-w-5xl">
+      <div className="min-h-screen md:min-h-[70vh] flex justify-center px-4 flex-col gap-4 md:gap-6 max-w-5xl">
         <section>
           <h2 className="section-title">Meet Dula</h2>
           <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-4 md:gap-6">
