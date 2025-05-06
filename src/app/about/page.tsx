@@ -8,9 +8,7 @@ export default function AboutPage() {
     <main className="min-h-screen bg-background text-primary flex flex-col items-center justify-center px-4 py-12">
       <div className="section-style flex-col gap-4 md:gap-6 max-w-5xl">
         <section>
-          <h2 id="about" className="section-title">
-            Meet Dula
-          </h2>
+          <h2 className="section-title">Meet Dula</h2>
           <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-4 md:gap-6">
             <Image
               src={dulaImage}
@@ -50,10 +48,8 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-        <section>
-          <h2 id="skills" className="section-title">
-            Technical Skills
-          </h2>
+        <section id="skills" className="scroll-mt-4">
+          <h2 className="section-title">Technical Skills</h2>
           <TechStack />
         </section>
         <Milestones />

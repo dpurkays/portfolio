@@ -4,7 +4,7 @@ import b5img from "../../../public/svg/b5.svg";
 
 function About() {
   return (
-    <section id="about">
+    <section id="about" className="scroll-mt-24">
       <h2 className="section-title text-center">Meet Dula</h2>
       <div className="max-w-6xl mx-auto px-4 pt-8 pb-16 grid grid-cols-1 md:grid-cols-6 gap-4 auto-rows-[minmax(150px,_auto)]">
         <div className="bg-box p-6 rounded-2xl col-span-full md:col-span-4 row-span-2 flex flex-col justify-between">
@@ -42,7 +42,10 @@ function About() {
             <span className="pill">Tailwind CSS</span>
             <span className="pill">MySQL</span>
             <span></span>
-            <Link href="/about#skills" className="pill cursor-pointer">
+            <Link
+              href="/about#skills"
+              className="bg-accent1 text-background px-3 py-1 rounded-full text-xs font-semibold hover:bg-accent2 transition cursor-pointer"
+            >
               More →
             </Link>
           </div>
