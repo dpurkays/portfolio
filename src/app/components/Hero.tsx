@@ -5,8 +5,8 @@ function Hero() {
     <div className="relative w-full h-screen section-style items-center ">
       <Fireflies />
       <section className="flex flex-col items-center text-center space-y-4 z-10">
-        <h1 className="text-3xl font-bold md:text-5xl">
-          Hi, I'm <span className="text-accent1">Dula Purkaystha</span>
+        <h1 className="text-5xl font-bold md:text-7xl">
+          Hi, I'm <span className="text-teal-500">Dula Purkaystha</span>
         </h1>
         <p className="text-base text-primary md:text-lg max-w-md mx-auto">
           a software engineer focused on thoughtful design, clean code, and

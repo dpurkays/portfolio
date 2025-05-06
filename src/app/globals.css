@@ -7,16 +7,24 @@ body {
   height: 100%;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .section-style {
   @apply min-h-screen md:min-h-[70vh] flex justify-center px-4;
 }
 
 .section-title {
-  @apply text-2xl font-bold md:text-4xl text-accent1;
+  @apply text-3xl font-bold md:text-5xl text-accent1;
 }
 
 .section-subheader {
-  @apply text-xl md:text-2xl text-accent2 font-semibold py-2;
+  @apply text-xl md:text-3xl text-accent2 font-semibold py-2;
 }
 
 .button-style {
