@@ -1,10 +1,14 @@
 "use client";
-import { homeNavItems as navItems } from "@/constants/NavItems";
+import type { NavItem } from "@/constants/NavItems";
 import Link from "next/link";
 import { useState } from "react";
 import HamburgerIcon from "./HamburgerIcon";
 
-function Header() {
+type HeaderProps = {
+  navItems: NavItem[];
+};
+
+function Header({ navItems }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

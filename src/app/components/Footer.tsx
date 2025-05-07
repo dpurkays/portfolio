@@ -1,9 +1,13 @@
-import { homeNavItems as navItems } from "@/constants/NavItems";
+import { NavItem } from "@/constants/NavItems";
 import Link from "next/link";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import DividerLine from "./DividerLine";
 
-function Footer() {
+type FooterProps = {
+  navItems: NavItem[];
+};
+
+function Footer({ navItems }: FooterProps) {
   return (
     <footer className="w-full bg-box text-xs text-muted py-8 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6">
