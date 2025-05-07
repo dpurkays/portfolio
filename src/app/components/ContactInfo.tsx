@@ -4,7 +4,7 @@ import DividerLine from "./DividerLine";
 
 function ContactInfo() {
   return (
-    <div className="bg-box p-6 rounded-xl flex flex-col gap-4">
+    <div className="bg-box p-6 rounded-xl flex flex-col gap-4 flex-1">
       <section className="flex flex-col gap-4">
         <h3 className="font-semibold text-lg text-primary">
           Contact Information
@@ -40,14 +40,14 @@ function ContactInfo() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin />
+            <FaLinkedin className="hover:text-accent2" />
           </a>
           <a
             href="https://github.com/dpurkays"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub />
+            <FaGithub className="hover:text-accent2" />
           </a>
         </div>
       </section>
