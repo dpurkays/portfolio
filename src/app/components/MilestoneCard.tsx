@@ -3,7 +3,6 @@ interface MilestoneCardProps {
   subtitle?: string;
   date?: string;
   location?: string;
-  // description?: string;
   description?: React.ReactNode;
 }
 
@@ -14,20 +13,10 @@ export default function MilestoneCard({
   location,
   description,
 }: MilestoneCardProps) {
-  // return (
-  //   <div
-  //     className={`rounded-lg border p-6 hover:-translate-y-1 transform transition duration-200`}
-  //   >
-  //     <h3 className="font-medium text-lg">{title}</h3>
-  //     {subtitle && <p className="text-sm text-muted">{subtitle}</p>}
-  //     {date && <p className="text-sm">{date}</p>}
-  //     {description && <p className="text-sm mt-2">{description}</p>}
-  //   </div>
-  // );
   return (
     <div className="bg-box rounded-2xl p-6 space-y-2 hover:-translate-y-1 transform transition duration-200">
       <h3 className="font-medium text-xl text-primary">{title}</h3>
-      {subtitle && <p className="text-base text-accent2">{subtitle}</p>}
+      <p className="text-base text-accent2">{subtitle}</p>
       <div className="flex gap-16 text-muted">
         {date && (
           <div className="flex items-center gap-1">
@@ -59,7 +48,7 @@ export default function MilestoneCard({
         )}
       </div>
       {description && (
-        <p className="text-sm text-primary mt-2">{description}</p>
+        <div className="text-sm text-primary mt-2">{description}</div>
       )}
     </div>
   );

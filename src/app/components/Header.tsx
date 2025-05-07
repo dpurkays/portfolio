@@ -1,25 +1,11 @@
 "use client";
+import { homeNavItems as navItems } from "@/constants/NavItems";
 import Link from "next/link";
 import { useState } from "react";
 import HamburgerIcon from "./HamburgerIcon";
 
-type NavItem = {
-  label: string;
-  href: string;
-};
-
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-
-  const navItems: NavItem[] = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Projects", href: "#projects" },
-    { label: "Education", href: "#education" },
-    { label: "Experience", href: "#experience" },
-    { label: "Contact", href: "#contact" },
-  ];
 
   return (
     <header className="fixed top-0 left-0 w-full shadow-md z-50">
