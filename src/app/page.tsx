@@ -1,5 +1,6 @@
 import { homeNavItems } from "@/constants/NavItems";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <About />
         <Milestones styles="section-style" />
+        <Contact />
       </main>
       <Footer navItems={homeNavItems} />
     </>

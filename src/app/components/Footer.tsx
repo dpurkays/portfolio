@@ -20,42 +20,43 @@ function Footer({ navItems }: FooterProps) {
         </div>
 
         <div className="flex flex-col md:items-end">
-          <h4 className="font-semibold mb-2">Quick Links</h4>
+          <h4 className="font-semibold mb-2 uppercase self-start">
+            Quick Links
+          </h4>
           <ul className="flex gap-4">
             {navItems.map(({ label, href }) => (
               <li key={label}>
-                <Link href={href} className="cursor-pointer">
+                <Link href={href} className="cursor-pointer hover:text-accent1">
                   {label}
                 </Link>
               </li>
             ))}
           </ul>
+          <div className="max-w-6xl self-start mt-2 flex gap-2 text-lg">
+            <a
+              href="https://github.com/dpurkays"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent1 transition"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://linkedin.com/in/dula-purkaystha"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent1 transition"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="mailto:dpurkays@gmail.com"
+              className="hover:text-accent1 transition"
+            >
+              <FaEnvelope />
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div className="max-w-6xl mx-auto mt-6 flex md:justify-end gap-2 text-lg">
-        <a
-          href="https://github.com/dpurkays"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-accent1 transition"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://linkedin.com/in/dula-purkaystha"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-accent1 transition"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="mailto:dpurkays@gmail.com"
-          className="hover:text-accent1 transition"
-        >
-          <FaEnvelope />
-        </a>
       </div>
 
       <DividerLine />
