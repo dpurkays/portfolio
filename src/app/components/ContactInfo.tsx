@@ -4,7 +4,7 @@ import DividerLine from "./DividerLine";
 
 function ContactInfo() {
   return (
-    <div className="bg-box p-6 rounded-xl flex flex-col gap-4 flex-1">
+    <div className="bg-box p-6 rounded-xl flex flex-col md:flex-row gap-4 flex-1">
       <section className="flex flex-col gap-4">
         <h3 className="font-semibold text-lg text-primary">
           Contact Information
@@ -31,7 +31,13 @@ function ContactInfo() {
           </div>
         </div>
       </section>
-      <DividerLine />
+      <div className="block md:hidden">
+        <DividerLine direction="horizontal" />
+      </div>
+
+      <div className="hidden md:block">
+        <DividerLine direction="vertical" length="h-36" />
+      </div>
       <section className="flex flex-col gap-4">
         <h3 className="font-semibold text-lg text-primary">Follow Me</h3>
         <div className="flex gap-3 text-accent1 text-3xl">
