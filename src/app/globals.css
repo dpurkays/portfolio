@@ -24,7 +24,7 @@ a {
 }
 
 .section-subheader {
-  @apply text-xl md:text-3xl text-accent2 font-semibold py-2;
+  @apply text-lg md:text-xl text-accent2 font-semibold py-2;
 }
 
 .button-style {
