@@ -5,7 +5,7 @@ function TechStack() {
   return (
     <div className="grid gap-3 md:grid-cols-2">
       {techCategories.map(({ title, bg, badges }) => (
-        <section className={`${bg} rounded-xl p-4 shadow-md`}>
+        <section key={title} className={`${bg} rounded-xl p-4 shadow-md`}>
           <h3 className="section-subheader">{title}</h3>
           <div className="flex gap-1 flex-wrap">
             {badges.map((badge) => (
