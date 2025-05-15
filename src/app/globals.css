@@ -20,7 +20,7 @@ a {
 }
 
 .section-title {
-  @apply text-3xl font-bold md:text-5xl text-accent1;
+  @apply text-3xl font-bold md:text-5xl text-accent1 text-center;
 }
 
 .section-subheader {
