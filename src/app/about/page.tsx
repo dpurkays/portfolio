@@ -1,6 +1,6 @@
 import { aboutNavItems } from "@/constants/NavItems";
 import Image from "next/image";
-import dulaImage from "../../../public/dulapfp.png";
+import dulaImage from "../../../public/images/dula-pfp.png";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
