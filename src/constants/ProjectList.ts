@@ -1,5 +1,6 @@
 export type Project = {
   id: number;
+  isFeatured?: boolean;
   title: string;
   description: string;
   image: string;
@@ -15,12 +16,13 @@ export type Project = {
 export const projectList: Project[] = [
   {
     id: 1,
+    isFeatured: true,
     title: "Anime Matchmaker 💖",
     description:
       "A full-stack anime recommendation app that suggests shows based on mood, history, and preferences. Built with React, TypeScript, Node.js, and Express.",
     image: "/images/anime-matchmaker.png",
     github: "https://github.com/dpurkays/anime-matchmaker",
-    live: "https://anime-matchmaker.vercel.app/",
+    live: "https://animematchmaker.netlify.app/",
     techStack: [
       "React",
       "Sass",
@@ -48,7 +50,7 @@ export const projectList: Project[] = [
     description:
       "An AI-powered web app developed in a 24-hour Industry Hackathon hosted by BrainStation in partnership with Microsoft. The platform helps Canadians identify genuinely Canadian-made products and offers local alternatives when available, with an AI-powered quiz to engage users and raise awareness.",
     video: "/videos/true-north-demo.mp4",
-    image: "/images/true-north-finder-thumb.png",
+    image: "/images/true-north-search.png",
     techStack: ["React", "SASS", "Node.js", "Express.js", "Google Gemini API"],
     features: [
       "Real-time suggestions for local product alternatives",
@@ -80,11 +82,11 @@ export const projectList: Project[] = [
   },
   {
     id: 4,
-    title: "This Portfolio",
+    title: "Portfolio Site",
     description:
       "A fully custom-built developer portfolio created to showcase my technical projects, skills, and personality. The design balances structure and creativity while maintaining performance and accessibility standards.",
     image: "/images/portfolio.png",
-    github: "https://github.com/dpurkays/portfolio",
+    github: "https://github.com/dpurkays/portfolio0",
     live: "https://dula.dev/",
     techStack: [
       "Next.js",
