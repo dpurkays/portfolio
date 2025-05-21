@@ -1,6 +1,7 @@
 export type Project = {
   id: number;
   isFeatured?: boolean;
+  slug: string;
   title: string;
   description: string;
   image: string;
@@ -17,6 +18,7 @@ export const projectList: Project[] = [
   {
     id: 1,
     isFeatured: true,
+    slug: "anime-matchmaker",
     title: "Anime Matchmaker 💖",
     description:
       "A full-stack anime recommendation app that suggests shows based on mood, history, and preferences. Built with React, TypeScript, Node.js, and Express.",
@@ -46,6 +48,7 @@ export const projectList: Project[] = [
   },
   {
     id: 2,
+    slug: "true-north-search",
     title: "True North Search 🍁",
     description:
       "An AI-powered web app developed in a 24-hour Industry Hackathon hosted by BrainStation in partnership with Microsoft. The platform helps Canadians identify genuinely Canadian-made products and offers local alternatives when available, with an AI-powered quiz to engage users and raise awareness.",
@@ -64,6 +67,7 @@ export const projectList: Project[] = [
   },
   {
     id: 3,
+    slug: "auto-scroller",
     title: "Auto Scroller",
     description:
       "A Chrome extension built specifically to improve the reading experience for visual storytelling formats like manhwas, mangas, and comics. It lets users scroll automatically at a chosen pace, making it easier to stay immersed without constant manual scrolling.",
@@ -82,11 +86,12 @@ export const projectList: Project[] = [
   },
   {
     id: 4,
+    slug: "portfolio",
     title: "Portfolio Site",
     description:
       "A fully custom-built developer portfolio created to showcase my technical projects, skills, and personality. The design balances structure and creativity while maintaining performance and accessibility standards.",
     image: "/images/portfolio.png",
-    github: "https://github.com/dpurkays/portfolio0",
+    github: "https://github.com/dpurkays/portfolio",
     live: "https://dula.dev/",
     techStack: [
       "Next.js",
