@@ -64,7 +64,7 @@ export const projectList: Project[] = [
     title: "True North Search 🍁",
     description:
       "An AI-powered web app developed in a 24-hour BrainStation x Microsoft Hackathon. True North Search helps Canadians identify genuinely Canadian-made products and discover local alternatives while building trust in AI through a friendly, informative experience.",
-    video: "/videos/true-north-demo.mp4",
+    video: "/videos/true-north-search-demo.mp4",
     image: "/images/true-north-search.png",
     challenge:
       "There’s a growing distrust of AI among the public, paired with increasing tension from cross-border trade between Canada and the U.S. Canadians often unknowingly support foreign products, lacking accessible tools to verify product origin or find local alternatives. At the same time, common misconceptions about AI make adoption difficult.",

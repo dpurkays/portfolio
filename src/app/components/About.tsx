@@ -21,7 +21,7 @@ function About() {
           <p className="text-sm md:text-base text-primary mb-4">
             Whether it's refining user experiences or building backend systems,
             I love solving problems with thoughtful code. At the core, I'm
-            driven by the belief that technology should serve people — clearly,
+            driven by the belief that technology should serve people —> clearly,
             efficiently, and meaningfully.
           </p>
           <Link href="/about" className="button-style self-end mt-auto">

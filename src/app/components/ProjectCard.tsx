@@ -54,9 +54,7 @@ function ProjectCard({
 
           {video && (
             <Link
-              href={video}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`/projects/${slug}?autoplay=true#video`}
               className="flex gap-1 items-center text-accent1 hover:text-accent2"
             >
               Watch demo <FaVideo />

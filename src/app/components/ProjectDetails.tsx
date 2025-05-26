@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { ContentCardProps } from "./ContentCard";
 import ProjectDetailsSection from "./ProjectDetailsSection";
+import VideoDemo from "./VideoDemo";
 
 function ProjectDetails({
   title,
@@ -73,7 +74,7 @@ function ProjectDetails({
           </Link>
         </div>
         {video ? (
-          <video src={video} controls className="w-full h-full rounded-lg" />
+          <VideoDemo video={video} />
         ) : (
           <Image
             src={image}
