@@ -8,10 +8,15 @@ export type Project = {
   video?: string;
   github?: string;
   live?: string;
+
+  challenge: string;
+  solution: string;
   techStack: string[];
   features: string[];
-  challenges?: string;
+  screenshots?: string[];
+  obstacles?: string;
   learnings?: string;
+  improvements?: string;
 };
 
 export const projectList: Project[] = [
@@ -25,6 +30,10 @@ export const projectList: Project[] = [
     image: "/images/anime-matchmaker.png",
     github: "https://github.com/dpurkays/anime-matchmaker",
     live: "https://animematchmaker.netlify.app/",
+    challenge:
+      "Users often struggle to find anime that matches their current mood or emotional state. Traditional recommendation systems focus on genres and popularity, but they lack the emotional nuance and context users are often looking for.",
+    solution:
+      "Anime Matchmaker delivers personalized anime recommendations using user mood, favorite shows, and watch history as inputs. By integrating the Jikan API and Gemini AI, it returns up to 10 recommendations at a time. It also includes trending seasonal picks and a responsive, user-friendly interface.",
     techStack: [
       "React",
       "Sass",
@@ -41,58 +50,73 @@ export const projectList: Project[] = [
       "Seasonal trending anime display",
       "Fully responsive design (mobile, tablet, desktop)",
     ],
-    challenges:
-      "Handling rate limiting from the Jikan API while ensuring a smooth user experience. I implemented request throttling with Bottleneck, caching with Node-Cache, and added a retry mechanism with manual delays to deliver results gracefully instead of showing an empty state.",
+    // screenshots: ["/images/anime1.png", "/images/anime2.png"],
+    obstacles:
+      "At the start, fewer than 10% of requests were returning useful results due to aggressive rate limiting from the Jikan API. After implementing caching with Node-Cache, throttling using Bottleneck, and a retry mechanism with manual delays, I increased the successful response rate to over 90%. This ensured users consistently received 10 meaningful recommendations, dramatically improving both reliability and user experience.",
     learnings:
       "This project taught me how to work across both the frontend and backend to build a complete web application. I learned how to prompt an AI model effectively, manage user interactions with React, handle changing URLs, and deploy a live app for the first time. It also helped me improve how I organize and manage app state to keep everything running smoothly.",
+    improvements:
+      "I plan to extend Anime Matchmaker to include manga recommendations, allowing users to discover stories beyond anime. I also want to experiment with other anime APIs such as AniList, which offers more generous rate limits and enriched metadata, potentially improving both performance and recommendation quality. Additionally, I aim to integrate the official MyAnimeList API so users can log in and bookmark anime directly to their personal watch lists. These enhancements will make the app more versatile, user-friendly, and deeply integrated with the anime community.",
   },
   {
     id: 2,
     slug: "true-north-search",
     title: "True North Search 🍁",
     description:
-      "An AI-powered web app developed in a 24-hour Industry Hackathon hosted by BrainStation in partnership with Microsoft. The platform helps Canadians identify genuinely Canadian-made products and offers local alternatives when available, with an AI-powered quiz to engage users and raise awareness.",
+      "An AI-powered web app developed in a 24-hour BrainStation x Microsoft Hackathon. True North Search helps Canadians identify genuinely Canadian-made products and discover local alternatives while building trust in AI through a friendly, informative experience.",
     video: "/videos/true-north-demo.mp4",
     image: "/images/true-north-search.png",
+    challenge:
+      "There’s a growing distrust of AI among the public, paired with increasing tension from cross-border trade between Canada and the U.S. Canadians often unknowingly support foreign products, lacking accessible tools to verify product origin or find local alternatives. At the same time, common misconceptions about AI make adoption difficult.",
+    solution:
+      "We built an AI-driven product search platform that helps users make more informed purchasing decisions while demystifying the role of AI. The app identifies whether a product is truly Canadian-made and suggests local alternatives if available. A built-in quiz adds an engaging, myth-busting experience that fosters camaraderie between Canadians and AI.",
     techStack: ["React", "SASS", "Node.js", "Express.js", "Google Gemini API"],
     features: [
       "Real-time suggestions for local product alternatives",
       "Responsive and accessible UI for desktop and mobile",
       "AI-powered quiz that debunks myths about AI",
     ],
-    challenges:
-      "Working within a 24-hour timeframe was challenging in every way — from planning and building features to communicating effectively under pressure. We had to prioritize quickly, collaborate closely, and make fast decisions while still producing a polished result.",
+    obstacles:
+      "Working within a 24-hour hackathon posed challenges in scoping, aligning on a single solution, and executing under time pressure. Balancing Microsoft’s problem space with our vision for a Canadian-focused tool required fast pivots and clear team communication across time zones.",
     learnings:
-      "Strengthened my ability to collaborate in high-pressure environments, implement dynamic routing, handle APIs, and integrate AI into user experiences. I also improved my code review and Git workflow practices.",
+      "I learned how to collaborate effectively under extreme time constraints, aligning quickly on team roles and product goals. It pushed me to prioritize features, build rapidly with clarity, and contribute meaningfully to both frontend functionality and UX decisions. I also sharpened my communication and Git workflow skills during this fast-paced build.",
   },
   {
     id: 3,
     slug: "auto-scroller",
     title: "Auto Scroller",
     description:
-      "A Chrome extension built specifically to improve the reading experience for visual storytelling formats like manhwas, mangas, and comics. It lets users scroll automatically at a chosen pace, making it easier to stay immersed without constant manual scrolling.",
+      "A lightweight Chrome extension designed to enhance the reading experience for visual storytelling formats like manhwas, mangas, and comics. Auto Scroller allows readers to scroll automatically at their own pace, maintaining immersion without the distraction of manual interaction.",
     image: "/images/auto-scroller.png",
     github: "https://github.com/dpurkays/auto-scroller",
+    challenge:
+      "Most digital comics and scroll-based content require frequent manual scrolling, which breaks immersion and disrupts the reading flow. I wanted to solve a personal pain point: maintaining a consistent rhythm while reading webtoons, without the fatigue of constant interaction.",
+    solution:
+      "I created a Chrome extension that lets users toggle automatic vertical scrolling at a comfortable pace. Users can toggle the scroll, set their preferred speed, and enjoy hands-free reading.",
     techStack: ["JavaScript", "HTML", "CSS", "Chrome APIs"],
     features: [
       "Start/stop/adjust scroll speed",
-      "Lightweight interface",
-      "Ideal for teleprompting or focus reading",
+      "Lightweight, minimal UI",
+      "Ideal for teleprompting or focused reading",
     ],
-    challenges:
-      "The biggest challenge was testing the scroll behavior across different comic and webtoon readers to ensure a smooth, immersive experience. I spent time adjusting timing logic and manually testing in my browser to fine-tune the scrolling pace and prevent jitter or stutter.",
     learnings:
-      "This was my first time building a Chrome extension, and it taught me how browser extensions interact with web pages through the DOM. I also learned how to test browser behavior manually and improve performance through careful timing adjustments.",
+      "This was my first time building a Chrome extension, and it gave me the opportunity to experiment with Chrome APIs while solving a real problem I personally experience. I learned how to inject scripts into webpages, manipulate the DOM through content scripts, and control browser behavior. It was rewarding to build something functional and lightweight that improved a specific, day-to-day experience for me as a reader.",
+    improvements:
+      "I'd like to fine-tune the scroll speed for manhwa and webtoon readers by testing it with users and adjusting it based on real reading behavior. I also want to expand Auto Scroller to support long-form text, making it useful for reading articles, essays, and other written content in a hands-free way.",
   },
   {
     id: 4,
     slug: "portfolio",
     title: "Portfolio Site",
     description:
-      "A fully custom-built developer portfolio created to showcase my technical projects, skills, and personality. The design balances structure and creativity while maintaining performance and accessibility standards.",
+      "A custom-built developer portfolio showcasing my projects, skills, and style with Next.js and Tailwind CSS.",
     image: "/images/portfolio.png",
     github: "https://github.com/dpurkays/portfolio",
     live: "https://dula.dev/",
+    challenge:
+      "I wanted a site that felt personal and professional — but designing from scratch without a layout plan made it hard to balance visual flair with clean UX.",
+    solution:
+      "I created a modular Next.js app with Tailwind CSS and Framer Motion. The design is mobile-first, animated subtly, and powered by reusable components to simplify iteration.",
     techStack: [
       "Next.js",
       "TypeScript",
@@ -102,14 +126,14 @@ export const projectList: Project[] = [
     ],
     features: [
       "Responsive design optimized for mobile, tablet, and desktop",
-      "Dynamic project section",
+      "Dynamic project section with detail pages",
       "Subtle UI animations using Framer Motion",
       "Animated background using tsParticles",
-      "Modular and reusable components for easy updates",
+      "Modular and reusable components for scalability",
     ],
-    challenges:
-      "The biggest challenge was translating design inspiration into a cohesive and clean user experience without a fixed layout plan. I explored different layout ideas, iterated on the visual hierarchy, and refined the interface gradually until it aligned with the tone I wanted to express.",
+    obstacles:
+      "Translating creative ideas into a clean layout required trial and error. I tested different visual hierarchies and typography styles to get the tone right.",
     learnings:
-      "This was my first time working with both Next.js and Tailwind CSS. I learned how to structure a scalable Next.js project, build fast and responsive layouts using Tailwind utility classes, and apply consistent design decisions across components.",
+      "I gained hands-on experience with Next.js, Tailwind, and UI animation libraries. I also learned how to structure a scalable project and maintain accessibility.",
   },
 ];

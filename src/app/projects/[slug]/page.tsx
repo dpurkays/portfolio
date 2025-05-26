@@ -1,3 +1,4 @@
+import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import ProjectDetails from "@/app/components/ProjectDetails";
 import { homeNavItems } from "@/constants/NavItems";
@@ -16,9 +17,10 @@ export default async function ProjectPage({
   return (
     <>
       <Header navItems={homeNavItems} />
-      <main className="min-h-screen bg-background text-primary flex flex-col items-center justify-center px-4">
+      <main className="min-h-screen bg-background text-primary flex flex-col items-center justify-center px-4 py-20">
         <ProjectDetails {...project} />
       </main>
+      <Footer navItems={homeNavItems} />
     </>
   );
 }
