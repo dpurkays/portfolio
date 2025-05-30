@@ -6,7 +6,10 @@ function Hero() {
       <Fireflies />
       <section className="flex flex-col items-center text-center space-y-4 z-10">
         <h1 className="text-5xl font-bold md:text-7xl">
-          Hi, I'm <span className="text-teal-500">Dula Purkaystha</span>
+          {`Hi, I'm`}{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent1 to-accent2">
+            Dula Purkaystha
+          </span>
         </h1>
         <p className="text-base text-primary md:text-lg max-w-md mx-auto">
           a software engineer focused on thoughtful design, clean code, and
@@ -15,6 +18,9 @@ function Hero() {
         </p>
         <p className="text-accent2 text-lg md:text-2xl">
           Grounded. Detail-driven. Always learning.
+        </p>
+        <p className="text-sm md:text-base text-primary italic">
+          Based in Greater Vancouver, Canada 🍁
         </p>
         <div className="p-[2px] bg-gradient-to-r from-accent1 to-accent2 rounded-lg w-full md:w-fit">
           <a

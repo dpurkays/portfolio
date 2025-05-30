@@ -26,7 +26,7 @@ function ContactInfo() {
             <FaLocationDot className="text-accent1 text-lg" />
             <div>
               <p className="font-semibold">Location</p>
-              <p className="text-muted">Greater Vancouver Metropolitan Area</p>
+              <p className="text-muted">Greater Vancouver, Canada</p>
             </div>
           </div>
         </div>
