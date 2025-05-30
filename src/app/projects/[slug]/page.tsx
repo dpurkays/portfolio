@@ -1,7 +1,7 @@
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import ProjectDetails from "@/app/components/ProjectDetails";
-import { homeNavItems } from "@/constants/NavItems";
+import { projectNavItems } from "@/constants/NavItems";
 import { projectList } from "@/constants/ProjectList";
 import { notFound } from "next/navigation";
 
@@ -16,11 +16,11 @@ export default async function ProjectPage({
 
   return (
     <>
-      <Header navItems={homeNavItems} />
+      <Header navItems={projectNavItems} />
       <main className="min-h-screen bg-background text-primary flex flex-col items-center justify-center px-4 py-20">
         <ProjectDetails {...project} />
       </main>
-      <Footer navItems={homeNavItems} />
+      <Footer navItems={projectNavItems} />
     </>
   );
 }
