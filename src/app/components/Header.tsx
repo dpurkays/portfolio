@@ -3,6 +3,7 @@ import type { NavItem } from "@/constants/NavItems";
 import Link from "next/link";
 import { useState } from "react";
 import HamburgerIcon from "./HamburgerIcon";
+import Logo from "./Logo";
 
 type HeaderProps = {
   navItems: NavItem[];
@@ -13,8 +14,8 @@ function Header({ navItems }: HeaderProps) {
 
   return (
     <header className="fixed top-0 left-0 w-full shadow-md z-50">
-      <div className="flex justify-between items-center bg-background gap-4 px-4 py-4 md:px-6">
-        <div className="text-primary font-bold text-xl ">Dula P</div>
+      <div className="flex justify-between items-center bg-background gap-4 px-4 py-4 md:px-6 max-w-screen-xl mx-auto">
+        <Logo />
         <div
           className="lg:hidden text-primary focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}

@@ -19,10 +19,10 @@ function About() {
             drive progress.
           </p>
           <p className="text-sm md:text-base text-primary mb-4">
-            Whether it's refining user experiences or building backend systems,
+            {`Whether it's refining user experiences or building backend systems,
             I love solving problems with thoughtful code. At the core, I'm
             driven by the belief that technology should serve people —> clearly,
-            efficiently, and meaningfully.
+            efficiently, and meaningfully.`}
           </p>
           <Link href="/about" className="button-style self-end mt-auto">
             Learn More →
@@ -31,8 +31,8 @@ function About() {
 
         <div className="bg-box p-6 rounded-2xl col-span-full md:col-span-2 row-span-1">
           <p className="italic text-sm mb-3 text-accent2">
-            "Currently working with React, TypeScript, and curiosity as my
-            stack."
+            {`"Currently working with React, TypeScript, and curiosity as my
+            stack."`}
           </p>
           <div className="grid grid-cols-2 gap-2 text-sm font-medium text-primary">
             <span className="pill">React</span>

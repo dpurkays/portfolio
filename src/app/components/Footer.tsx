@@ -2,6 +2,7 @@ import { NavItem } from "@/constants/NavItems";
 import Link from "next/link";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import DividerLine from "./DividerLine";
+import Logo from "./Logo";
 
 type FooterProps = {
   navItems: NavItem[];
@@ -10,12 +11,9 @@ type FooterProps = {
 function Footer({ navItems }: FooterProps) {
   return (
     <footer className="w-full bg-box text-xs text-muted py-8 px-4">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6">
+      <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between gap-6">
         <div>
-          <h3 className="text-lg font-bold">
-            <span className="text-accent1">Dula</span>{" "}
-            <span className="text-accent2">P</span>
-          </h3>
+          <Logo />
           <p className="mt-1">Software Engineer</p>
         </div>
 
@@ -61,7 +59,7 @@ function Footer({ navItems }: FooterProps) {
 
       <DividerLine />
 
-      <div className="max-w-6xl mx-auto flex justify-center">
+      <div className="max-w-screen-xl mx-auto flex justify-center">
         <p>
           © {new Date().getFullYear()} Dula Purkaystha. All rights reserved.
         </p>
