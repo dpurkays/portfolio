@@ -11,6 +11,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      scrollBehavior: ["responsive"],
       colors: {
         background: "#0C0F1A",
         box: "#121624",
