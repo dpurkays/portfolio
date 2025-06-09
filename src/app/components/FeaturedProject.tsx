@@ -7,8 +7,6 @@ import { useRouter } from "next/navigation";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import TechTags from "./TechTags";
 
-interface FeaturedProjectProps extends Project {}
-
 function FeaturedProject({
   title,
   slug,
@@ -18,7 +16,7 @@ function FeaturedProject({
   techStack,
   github,
   live,
-}: FeaturedProjectProps) {
+}: Project) {
   const router = useRouter();
 
   return (
