@@ -1,3 +1,6 @@
+import { boxVariants } from "@/constants/Variant";
+import * as motion from "motion/react-client";
+
 interface MilestoneCardProps {
   title: string;
   subtitle?: string;
@@ -14,7 +17,10 @@ export default function MilestoneCard({
   description,
 }: MilestoneCardProps) {
   return (
-    <div className="bg-box rounded-2xl p-6 space-y-2 hover:-translate-y-1 transform transition duration-200">
+    <motion.div
+      className="bg-box rounded-2xl p-6 space-y-2 hover:-translate-y-1 transform transition duration-200"
+      variants={boxVariants}
+    >
       <h3 className="font-medium text-xl text-primary">{title}</h3>
       <p className="text-base text-accent2">{subtitle}</p>
       <div className="flex gap-16 text-muted">
@@ -50,6 +56,6 @@ export default function MilestoneCard({
       {description && (
         <div className="text-sm text-primary mt-2">{description}</div>
       )}
-    </div>
+    </motion.div>
   );
 }

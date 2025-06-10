@@ -1,21 +1,35 @@
+import * as motion from "motion/react-client";
+import Link from "next/link";
+import DividerLine from "./DividerLine";
+import MilestoneCard from "./MilestoneCard";
+import PageSection from "./PageSection";
+import TechTags from "./TechTags";
+
 interface MilestonesProps {
   styles?: string;
 }
 
-import Link from "next/link";
-import DividerLine from "./DividerLine";
-import MilestoneCard from "./MilestoneCard";
-import TechTags from "./TechTags";
-
 function Milestones({ styles = "" }: MilestonesProps) {
   return (
-    <div
+    <motion.div
       className={`flex flex-col md:flex-row-reverse justify-between gap-8 ${styles}`}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={{
+        hidden: {},
+        visible: {
+          transition: {
+            staggerChildren: 0.15,
+          },
+        },
+      }}
     >
-      <section className="md:w-1/2 space-y-4">
-        <h2 id="experience" className="section-title scroll-mt-24">
-          Experience
-        </h2>
+      <PageSection
+        id="experience"
+        title="Experience"
+        className="md:w-1/2 space-y-4"
+      >
         <MilestoneCard
           title="Software Engineer Intern"
           subtitle="Bhaktivedanta Book Trust"
@@ -42,11 +56,12 @@ function Milestones({ styles = "" }: MilestonesProps) {
             </div>
           }
         />
-      </section>
-      <section className="md:w-1/2 space-y-4">
-        <h2 id="education" className="section-title scroll-mt-24">
-          Education
-        </h2>
+      </PageSection>
+      <PageSection
+        id="education"
+        title="Education"
+        className="md:w-1/2 space-y-4"
+      >
         <MilestoneCard
           title="Diploma, Software Engineering"
           subtitle="BrainStation"
@@ -128,8 +143,8 @@ function Milestones({ styles = "" }: MilestonesProps) {
           subtitle="University of Calgary"
           location="Calgary, AB"
         />
-      </section>
-    </div>
+      </PageSection>
+    </motion.div>
   );
 }
 
