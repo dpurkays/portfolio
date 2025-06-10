@@ -16,7 +16,7 @@ a {
 }
 
 .section-style {
-  @apply max-w-6xl mx-auto px-4 pt-8 pb-16 text-base;
+  @apply max-w-6xl mx-auto px-4 pt-8 pb-16 text-base scroll-mt-24;
 }
 
 .section-title {

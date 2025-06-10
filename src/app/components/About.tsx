@@ -1,13 +1,39 @@
+import * as motion from "motion/react-client";
 import Image from "next/image";
 import Link from "next/link";
 import b5img from "../../../public/svg/b5.svg";
+import PageSection from "./PageSection";
+
+const boxVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 function About() {
   return (
-    <section id="about" className="scroll-mt-24">
-      <h2 className="section-title text-center">Meet Dula</h2>
-      <div className="section-style grid grid-cols-1 md:grid-cols-6 gap-4 auto-rows-[minmax(150px,_auto)]">
-        <div className="bg-box p-6 rounded-2xl col-span-full md:col-span-4 row-span-2 flex flex-col justify-between">
+    <PageSection id="about" title="Meet Dula">
+      <motion.div
+        className="section-style grid grid-cols-1 md:grid-cols-6 gap-4 auto-rows-[minmax(150px,_auto)]"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.15,
+            },
+          },
+        }}
+      >
+        <motion.div
+          variants={boxVariants}
+          className="bg-box p-6 rounded-2xl col-span-full md:col-span-4 row-span-2 flex flex-col justify-between"
+        >
           <p className="text-sm text-accent2 mb-4">
             Software Engineer | Curious Thinker | Problem Solver
           </p>
@@ -27,9 +53,12 @@ function About() {
           <Link href="/about" className="button-style self-end mt-auto">
             Learn More →
           </Link>
-        </div>
+        </motion.div>
 
-        <div className="bg-box p-6 rounded-2xl col-span-full md:col-span-2 row-span-1">
+        <motion.div
+          variants={boxVariants}
+          className="bg-box p-6 rounded-2xl col-span-full md:col-span-2 row-span-1"
+        >
           <p className="italic text-sm mb-3 text-accent2">
             {`"Currently working with React, TypeScript, and curiosity as my
             stack."`}
@@ -49,9 +78,12 @@ function About() {
               More →
             </Link>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="bg-box2 p-6 rounded-2xl col-span-full md:col-span-2 row-span-1">
+        <motion.div
+          variants={boxVariants}
+          className="bg-box2 p-6 rounded-2xl col-span-full md:col-span-2 row-span-1"
+        >
           <h3 className="text-sm font-semibold text-accent2 mb-1">
             Beyond the Code
           </h3>
@@ -60,17 +92,26 @@ function About() {
             These creative breaks help me return to code with fresh energy and
             clarity.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="hidden md:grid bg-box rounded-2xl col-span-full md:col-span-2 overflow-hidden relative">
+        <motion.div
+          variants={boxVariants}
+          className="hidden md:grid bg-box rounded-2xl col-span-full md:col-span-2 overflow-hidden relative"
+        >
           <Image src={b5img} alt="code" className="object-cover" fill />
-        </div>
+        </motion.div>
 
-        <div className="bg-box2 p-6 rounded-2xl col-span-full md:col-span-2 flex items-center justify-center text-center text-lg font-semibold italic text-accent1">
+        <motion.div
+          variants={boxVariants}
+          className="bg-box2 p-6 rounded-2xl col-span-full md:col-span-2 flex items-center justify-center text-center text-lg font-semibold italic text-accent1"
+        >
           “Rooted in curiosity. Grown through iteration.”
-        </div>
+        </motion.div>
 
-        <div className="bg-gradient-to-br from-accent1 to-accent2 text-box p-6 rounded-2xl col-span-full md:col-span-2 flex flex-col justify-between">
+        <motion.div
+          variants={boxVariants}
+          className="bg-gradient-to-br from-accent1 to-accent2 text-box p-6 rounded-2xl col-span-full md:col-span-2 flex flex-col justify-between"
+        >
           <h3 className="text-base font-semibold mb-2">Want to connect?</h3>
           <p className="text-sm mb-4">
             Let’s talk about building something meaningful together.
@@ -81,9 +122,9 @@ function About() {
           >
             Contact Me →
           </Link>
-        </div>
-      </div>
-    </section>
+        </motion.div>
+      </motion.div>
+    </PageSection>
   );
 }
 
