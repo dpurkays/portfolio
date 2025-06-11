@@ -8,7 +8,7 @@ function Contact() {
     <PageSection id="contact" title="Get In Touch" className="w-full">
       <motion.p
         variants={boxVariants}
-        className="text-center text-muted max-w-2xl mx-auto mb-6"
+        className="text-center text-muted max-w-2xl mx-auto my-6"
       >
         Open to meaningful collaborations, new opportunities, or just a friendly
         hello. Feel free to reach out. I’d love to hear from you!

@@ -1,4 +1,5 @@
 import * as motion from "motion/react-client";
+import { FaLocationDot } from "react-icons/fa6";
 import Fireflies from "./Fireflies";
 
 function Hero() {
@@ -69,9 +70,11 @@ function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.6 }}
-          className="text-sm md:text-base text-primary italic"
+          className="text-sm md:text-base text-primary italic flex gap-1 items-center"
         >
-          Based in Greater Vancouver, Canada 🍁
+          <FaLocationDot />
+          Greater Vancouver Area, Canada
+          <span aria-label="Canada flag">🇨🇦</span>
         </motion.p>
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
