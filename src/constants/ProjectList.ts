@@ -120,7 +120,7 @@ export const projectList: Project[] = [
       "A custom-built developer portfolio showcasing my projects, skills, and style with Next.js and Tailwind CSS.",
     image: "/images/portfolio.png",
     github: "https://github.com/dpurkays/portfolio",
-    live: "https://dula.dev/",
+    live: "https://dula-purkaystha.vercel.app",
     challenge:
       "As a developer, I needed a space to showcase my work beyond GitHub repositories. I wanted to create a portfolio that reflects my personality, demonstrates my technical skills, and highlights the projects I’ve worked on in a visually engaging and organized way.",
     solution:
