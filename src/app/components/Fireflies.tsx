@@ -1,6 +1,6 @@
 "use client";
 
-import Particles from "react-tsparticles";
+import Particles from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 import { Engine } from "tsparticles-engine";
 import firefliesConfig from "../../config/fireflies.config";
