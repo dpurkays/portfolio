@@ -6,6 +6,7 @@ import { loadFull } from "tsparticles";
 import firefliesConfig from "../../config/fireflies.config";
 
 export default function Fireflies() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const particlesInit = useCallback(async (engine: any) => {
     await loadFull(engine);
   }, []);
