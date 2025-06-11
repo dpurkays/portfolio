@@ -22,7 +22,7 @@ export const aboutNavItems: NavItem[] = [
 
 export const projectNavItems: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "Skills", href: "/about/#skills" },
   { label: "Projects", href: "/#projects" },
+  { label: "About", href: "/about" },
   { label: "Contact", href: "#contact" },
 ];
