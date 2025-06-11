@@ -2,12 +2,11 @@
 
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { Engine } from "tsparticles-engine";
 import firefliesConfig from "../../config/fireflies.config";
 
 export default function Fireflies() {
-  const particlesInit = async (main: any) => {
-    console.log("hey");
-    console.log(main);
+  const particlesInit = async (main: Engine) => {
     await loadFull(main);
   };
 
