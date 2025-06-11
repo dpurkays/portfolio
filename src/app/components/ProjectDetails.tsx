@@ -1,4 +1,5 @@
 import { Project } from "@/constants/ProjectList";
+import * as motion from "motion/react-client";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
@@ -41,10 +42,46 @@ function ProjectDetails({
 
   return (
     <div className="section-style flex flex-col gap-4">
-      <section className="min-h-screen flex flex-col items-center justify-center gap-4 text-center">
-        <h1 className="text-3xl md:text-6xl font-bold text-accent1">{title}</h1>
-        <p>{description}</p>
-        <div className="flex flex-col md:flex-row gap-4 md:gap-6 pb-4 md:pb-8">
+      <motion.section
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.15,
+            },
+          },
+        }}
+        className="min-h-screen flex flex-col items-center justify-center gap-4 text-center pb-16"
+      >
+        <motion.h1
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 0.6 }}
+          className="text-3xl md:text-6xl font-bold text-accent1"
+        >
+          {title}
+        </motion.h1>
+        <motion.p
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 0.7 }}
+        >
+          {description}
+        </motion.p>
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col md:flex-row gap-4 md:gap-6 pb-4 md:pb-8"
+        >
           {live && (
             <Link
               href={live}
@@ -72,20 +109,33 @@ function ProjectDetails({
           >
             📊 Project Breakdown
           </Link>
-        </div>
-        {video ? (
-          <VideoDemo video={video} />
-        ) : (
-          <Image
-            src={image}
-            alt={`image of ${title} app`}
-            width={800}
-            height={450}
-            className="object-contain rounded-md"
-          />
-        )}
-      </section>
-      <div id="details" className="flex flex-col gap-8 md:gap-12 scroll-mt-24">
+        </motion.div>
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 1 },
+          }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+          initial="hidden"
+          animate="visible"
+        >
+          {video ? (
+            <VideoDemo video={video} />
+          ) : (
+            <Image
+              src={image}
+              alt={`image of ${title} app`}
+              width={800}
+              height={450}
+              className="object-contain rounded-md"
+            />
+          )}
+        </motion.div>
+      </motion.section>
+      <div
+        id="details"
+        className="flex flex-col gap-8 md:gap-12 scroll-mt-24 pt-8"
+      >
         <ProjectDetailsSection
           title="Project Overview"
           cards={[
