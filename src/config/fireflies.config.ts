@@ -194,7 +194,7 @@ const firefliesConfig: ISourceOptions = {
         width: 1920,
         height: 1080,
       },
-      limit: { value: 0 },
+      // limit: 0,
       value: 200,
     },
     opacity: {
