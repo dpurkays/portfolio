@@ -36,6 +36,7 @@ export const projectList: Project[] = [
       "Anime Matchmaker delivers personalized anime recommendations using user mood, favorite shows, and watch history as inputs. By integrating the Jikan API and Gemini AI, it returns up to 10 recommendations at a time. It also includes trending seasonal picks and a responsive, user-friendly interface.",
     techStack: [
       "React",
+      "JavaScript",
       "Sass",
       "Node.js",
       "Express",
@@ -70,7 +71,14 @@ export const projectList: Project[] = [
       "There’s a growing distrust of AI among the public, paired with increasing tension from cross-border trade between Canada and the U.S. Canadians often unknowingly support foreign products, lacking accessible tools to verify product origin or find local alternatives. At the same time, common misconceptions about AI make adoption difficult.",
     solution:
       "We built an AI-driven product search platform that helps users make more informed purchasing decisions while demystifying the role of AI. The app identifies whether a product is truly Canadian-made and suggests local alternatives if available. A built-in quiz adds an engaging, myth-busting experience that fosters camaraderie between Canadians and AI.",
-    techStack: ["React", "SASS", "Node.js", "Express.js", "Google Gemini API"],
+    techStack: [
+      "React",
+      "JavaScript",
+      "SASS",
+      "Node.js",
+      "Express.js",
+      "Google Gemini API",
+    ],
     features: [
       "Real-time suggestions for local product alternatives",
       "Responsive and accessible UI for desktop and mobile",
@@ -114,9 +122,9 @@ export const projectList: Project[] = [
     github: "https://github.com/dpurkays/portfolio",
     live: "https://dula.dev/",
     challenge:
-      "I wanted a site that felt personal and professional — but designing from scratch without a layout plan made it hard to balance visual flair with clean UX.",
+      "As a developer, I needed a space to showcase my work beyond GitHub repositories. I wanted to create a portfolio that reflects my personality, demonstrates my technical skills, and highlights the projects I’ve worked on in a visually engaging and organized way.",
     solution:
-      "I created a modular Next.js app with Tailwind CSS and Framer Motion. The design is mobile-first, animated subtly, and powered by reusable components to simplify iteration.",
+      "I built a personal portfolio site using Next.js, styled with Tailwind CSS, and added interactive animations using Framer Motion. The site includes dedicated sections for project case studies, a contact form, and an about page to present a holistic view of who I am as a developer.",
     techStack: [
       "Next.js",
       "TypeScript",
@@ -132,8 +140,8 @@ export const projectList: Project[] = [
       "Modular and reusable components for scalability",
     ],
     obstacles:
-      "Translating creative ideas into a clean layout required trial and error. I tested different visual hierarchies and typography styles to get the tone right.",
+      "One of the biggest challenges was translating my creative ideas into a clean, functional layout. I had multiple design inspirations but struggled to decide on a cohesive aesthetic. I learned Tailwind CSS and animation tools like Framer Motion and tsParticles on the fly while building the site, which added to the complexity.",
     learnings:
-      "I gained hands-on experience with Next.js, Tailwind, and UI animation libraries. I also learned how to structure a scalable project and maintain accessibility.",
+      "This project gave me hands-on experience with Next.js, Tailwind CSS, and Framer Motion, deepening my understanding of component-based architecture and animation in modern web development. I also learned the importance of having a distinct UI mockup before development. Being indecisive with design led to time-consuming revisions.",
   },
 ];

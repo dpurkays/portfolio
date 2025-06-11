@@ -16,6 +16,8 @@ function ProjectDetails({
   live,
   techStack,
   features,
+  challenge,
+  solution,
   obstacles,
   learnings,
   screenshots,
@@ -139,8 +141,8 @@ function ProjectDetails({
         <ProjectDetailsSection
           title="Project Overview"
           cards={[
-            { title: "🎯The Challenge", content: description },
-            { title: "💡The Solution", content: description },
+            { title: "🎯The Challenge", content: challenge },
+            { title: "💡The Solution", content: solution },
           ]}
         />
         <ProjectDetailsSection
