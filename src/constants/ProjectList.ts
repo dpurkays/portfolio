@@ -115,7 +115,7 @@ export const projectList: Project[] = [
   {
     id: 4,
     slug: "portfolio",
-    title: "Portfolio Site",
+    title: "Dev Portfolio",
     description:
       "A custom-built developer portfolio showcasing my projects, skills, and style with Next.js and Tailwind CSS.",
     image: "/images/portfolio.png",
@@ -124,7 +124,7 @@ export const projectList: Project[] = [
     challenge:
       "As a developer, I needed a space to showcase my work beyond GitHub repositories. I wanted to create a portfolio that reflects my personality, demonstrates my technical skills, and highlights the projects I’ve worked on in a visually engaging and organized way.",
     solution:
-      "I built a personal portfolio site using Next.js, styled with Tailwind CSS, and added interactive animations using Framer Motion. The site includes dedicated sections for project case studies, a contact form, and an about page to present a holistic view of who I am as a developer.",
+      "I built a personal portfolio site using Next.js, styled with Tailwind CSS, and added interactive animations using Framer Motion. The site includes dedicated sections for project case studies, and an about page to present a holistic view of who I am as a developer.",
     techStack: [
       "Next.js",
       "TypeScript",
@@ -133,7 +133,7 @@ export const projectList: Project[] = [
       "tsParticles",
     ],
     features: [
-      "Responsive design optimized for mobile, tablet, and desktop",
+      "Responsive design",
       "Dynamic project section with detail pages",
       "Subtle UI animations using Framer Motion",
       "Animated background using tsParticles",
