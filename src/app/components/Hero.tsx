@@ -55,7 +55,7 @@ function Hero() {
           className="text-base text-primary md:text-lg max-w-md mx-auto"
         >
           a software engineer focused on thoughtful design, clean code, and
-          staying curious.
+          staying curious
           <span className="italic">(even when the bugs bite)</span>.
         </motion.p>
         <motion.p
