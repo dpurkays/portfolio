@@ -1,5 +1,6 @@
 import { boxVariants } from "@/constants/Variant";
 import * as motion from "motion/react-client";
+import ContactForm from "./ContactForm";
 import ContactInfo from "./ContactInfo";
 import PageSection from "./PageSection";
 
@@ -13,11 +14,10 @@ function Contact() {
         Open to meaningful collaborations, new opportunities, or just a friendly
         hello. Feel free to reach out. I’d love to hear from you!
       </motion.p>
-      {/* <div className="flex flex-col md:flex-row gap-4"> */}
-      <motion.div variants={boxVariants} className="lg:mx-auto">
+      <div className="flex flex-col-reverse md:flex-row gap-4 justify-center md:gap-8">
         <ContactInfo />
-        {/* <ContactForm /> */}
-      </motion.div>
+        <ContactForm />
+      </div>
     </PageSection>
   );
 }
