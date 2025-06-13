@@ -1,3 +1,5 @@
+"use client";
+
 import { boxVariants } from "@/constants/Variant";
 import * as motion from "motion/react-client";
 import ContactForm from "./ContactForm";

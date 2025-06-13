@@ -1,10 +1,15 @@
+import { boxVariants } from "@/constants/Variant";
+import * as motion from "motion/react-client";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import DividerLine from "./DividerLine";
 
 function ContactInfo() {
   return (
-    <div className="bg-box p-6 rounded-xl flex flex-col gap-4 md:w-1/2">
+    <motion.div
+      variants={boxVariants}
+      className="bg-box p-6 rounded-xl flex flex-col gap-4 md:w-1/2"
+    >
       <div className="flex flex-col gap-4 flex-1">
         <div className="space-y-4 text-sm text-primary pt-4">
           <div className="flex items-center gap-4 pl-1">
@@ -42,7 +47,7 @@ function ContactInfo() {
           </a>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 }
 
