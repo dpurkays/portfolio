@@ -115,7 +115,7 @@ export const projectList: Project[] = [
   {
     id: 4,
     slug: "portfolio",
-    title: "Dev Portfolio",
+    title: "Personal Developer Portfolio",
     description:
       "A custom-built developer portfolio showcasing my projects, skills, and style with Next.js and Tailwind CSS.",
     image: "/images/portfolio.png",
@@ -124,24 +124,24 @@ export const projectList: Project[] = [
     challenge:
       "As a developer, I needed a space to showcase my work beyond GitHub repositories. I wanted to create a portfolio that reflects my personality, demonstrates my technical skills, and highlights the projects I’ve worked on in a visually engaging and organized way.",
     solution:
-      "I built a personal portfolio site using Next.js, styled with Tailwind CSS, and added interactive animations using Framer Motion. The site includes dedicated sections for project case studies, and an about page to present a holistic view of who I am as a developer.",
+      "I built a personal portfolio site using Next.js, styled with Tailwind CSS, and added interactive animations using Motion. The site includes dedicated sections for project case studies, and an about page to present a holistic view of who I am as a developer.",
     techStack: [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "Framer Motion",
+      "Motion",
       "tsParticles",
     ],
     features: [
       "Responsive design",
       "Dynamic project section with detail pages",
-      "Subtle UI animations using Framer Motion",
+      "Subtle UI animations using Motion",
       "Animated background using tsParticles",
       "Modular and reusable components for scalability",
     ],
     obstacles:
-      "One of the biggest challenges was translating my creative ideas into a clean, functional layout. I had multiple design inspirations but struggled to decide on a cohesive aesthetic. I learned Tailwind CSS and animation tools like Framer Motion and tsParticles on the fly while building the site, which added to the complexity.",
+      "One of the biggest challenges was translating my creative ideas into a clean, functional layout. I had multiple design inspirations but struggled to decide on a cohesive aesthetic. I learned Tailwind CSS and animation tools like Motion and tsParticles on the fly while building the site, which added to the complexity.",
     learnings:
-      "This project gave me hands-on experience with Next.js, Tailwind CSS, and Framer Motion, deepening my understanding of component-based architecture and animation in modern web development. I also learned the importance of having a distinct UI mockup before development. Being indecisive with design led to time-consuming revisions.",
+      "This project gave me hands-on experience with Next.js, Tailwind CSS, and Motion, deepening my understanding of component-based architecture and animation in modern web development. I also learned the importance of having a distinct UI mockup before development. Being indecisive with design led to time-consuming revisions.",
   },
 ];
