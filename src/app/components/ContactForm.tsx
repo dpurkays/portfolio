@@ -53,6 +53,7 @@ function ContactForm() {
                 required
                 placeholder="John Doe"
                 className="w-full bg-box2 text-primary rounded-md px-4 py-2 outline-none"
+                autoComplete="name"
               />
             </label>
             <label className="flex flex-col gap-1 text-muted text-sm font-medium">
@@ -63,6 +64,7 @@ function ContactForm() {
                 name="email"
                 placeholder="jdoe@example.com"
                 className="w-full bg-box2 text-primary rounded-md px-4 py-2 outline-none"
+                autoComplete="email"
               />
               <ValidationError
                 prefix="Email"
