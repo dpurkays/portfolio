@@ -26,7 +26,7 @@ export const projectList: Project[] = [
     slug: "anime-matchmaker",
     title: "Anime Matchmaker 💖",
     description:
-      "A full-stack anime recommendation app that suggests shows based on mood, history, and preferences. Built with React, TypeScript, Node.js, and Express.",
+      "A full-stack anime recommendation app that suggests shows based on mood, history, and preferences. Built with React, Node.js, Express and SASS.",
     image: "/images/anime-matchmaker.png",
     github: "https://github.com/dpurkays/anime-matchmaker",
     live: "https://animematchmaker.netlify.app/",
