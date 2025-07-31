@@ -54,7 +54,7 @@ function Hero() {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="text-base text-primary md:text-lg max-w-md mx-auto"
         >
-          a software engineer focused on thoughtful design, clean code, and
+          a software developer focused on thoughtful design, clean code, and
           staying curious
           <span className="italic">(even when the bugs bite)</span>.
         </motion.p>
