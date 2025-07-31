@@ -14,7 +14,7 @@ function Footer({ navItems }: FooterProps) {
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between gap-6">
         <div>
           <Logo />
-          <p className="mt-1">Software Engineer</p>
+          <p className="mt-1">Software Developer</p>
         </div>
 
         <div className="flex flex-col md:items-end">

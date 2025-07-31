@@ -28,11 +28,11 @@ function About() {
             className="bg-box p-6 rounded-2xl col-span-full md:col-span-4 row-span-2 flex flex-col justify-between"
           >
             <p className="text-sm text-accent2 mb-4">
-              Software Engineer | Curious Thinker | Problem Solver
+              Software Developer | Curious Thinker | Problem Solver
             </p>
             <p className="text-sm md:text-base text-primary mb-4">
               With a foundation in Psychology and a passion for tech, I
-              transitioned into software engineering to build solutions that are
+              transitioned into software development to build solutions that are
               as functional as they are user-friendly. I thrive in
               collaborative, real-world projects where learning,
               experimentation, and creativity drive progress.

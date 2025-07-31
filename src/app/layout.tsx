@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dula Purkaystha | Developer Portfolio",
     description:
-      "Explore Dula’s featured projects and learn more about her journey as a software engineer.",
+      "Explore Dula’s featured projects and learn more about her journey as a software developer.",
     url: "https://dula-purkaystha.vercel.app",
     siteName: "Dula Purkaystha",
     images: [
