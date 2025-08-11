@@ -144,4 +144,47 @@ export const projectList: Project[] = [
     learnings:
       "This project gave me hands-on experience with Next.js, Tailwind CSS, and Motion, deepening my understanding of component-based architecture and animation in modern web development. I also learned the importance of having a distinct UI mockup before development. Being indecisive with design led to time-consuming revisions.",
   },
+  {
+    id: 5,
+    slug: "instock",
+    title: "InStock",
+    description:
+      "A full-stack inventory management system built in an Agile team setting to replace an outdated, unscalable platform. Features a modern React frontend, a robust Express backend, and MySQL database integration via Knex.js.",
+    image: "/images/true-north-search.png",
+    challenge:
+      "The client’s legacy inventory management system was not scalable and performed poorly under heavy traffic. The task was to build a modern, full-stack replacement capable of handling real-world demands while following Agile development practices.",
+    solution:
+      "We replaced the legacy system with a modern, full-stack web application designed for scalability and maintainability. The backend was developed with Express.js and MySQL (via Knex.js) to deliver secure and efficient API endpoints, while the frontend was built in React with a responsive layout closely matching Figma mockups. My contributions included developing multiple backend API endpoints for inventory and warehouse management, implementing three validated React forms for adding and editing inventory items, creating dynamic routing and navigation for a seamless user experience, leading team discussions and sprint meetings to align development efforts, conducting a code review process for over 25 pull requests to uphold high-quality standards, and performing bug fixes and performance optimizations prior to final delivery.",
+    techStack: [
+      "React",
+      "React Router",
+      "Express.js",
+      "Node.js",
+      "MySQL",
+      "Knex.js",
+      "SASS",
+      "BEM",
+      "Axios",
+      "Postman",
+      "Git",
+      "GitHub",
+      "Jira",
+      "Agile",
+      "Scrum",
+    ],
+    features: [
+      "View a complete list of all inventory items with real-time updates",
+      "Add new inventory items with form validation",
+      "Edit existing inventory details",
+      "Delete inventory items from the system",
+      "View, add, edit, and delete warehouse locations",
+      "Search and filter inventory by product name, category, or warehouse",
+      "Responsive design",
+    ],
+    // screenshots: ["/images/instock1.png", "/images/instock2.png"],
+    obstacles:
+      "Coordinating task dependencies within sprints and ensuring smooth integration between frontend and backend components. Managing merge conflicts during rapid development and aligning implementation with detailed Figma mockups.",
+    learnings:
+      "Improved skills in cross-functional collaboration, backend API design, and maintaining code quality in a fast-paced Agile environment. Learned to handle merge conflicts and ensure smooth integration between frontend and backend components.",
+  },
 ];
