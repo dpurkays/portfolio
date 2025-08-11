@@ -37,7 +37,7 @@ function ProjectDetailsSection({ title, cards }: ProjectDetailsSectionProps) {
             },
           },
         }}
-        className="flex flex-col md:flex-row gap-6 w-full"
+        className="flex flex-col md:flex-row gap-6 w-full whitespace-pre-line"
       >
         {cards.map((card, index) => (
           <ContentCard key={index} {...card} />

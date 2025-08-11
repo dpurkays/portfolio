@@ -150,11 +150,11 @@ export const projectList: Project[] = [
     title: "InStock",
     description:
       "A full-stack inventory management system built in an Agile team setting to replace an outdated, unscalable platform. Features a modern React frontend, a robust Express backend, and MySQL database integration via Knex.js.",
-    image: "/images/true-north-search.png",
+    image: "/images/instock.png",
     challenge:
       "The client’s legacy inventory management system was not scalable and performed poorly under heavy traffic. The task was to build a modern, full-stack replacement capable of handling real-world demands while following Agile development practices.",
     solution:
-      "We replaced the legacy system with a modern, full-stack web application designed for scalability and maintainability. The backend was developed with Express.js and MySQL (via Knex.js) to deliver secure and efficient API endpoints, while the frontend was built in React with a responsive layout closely matching Figma mockups. My contributions included developing multiple backend API endpoints for inventory and warehouse management, implementing three validated React forms for adding and editing inventory items, creating dynamic routing and navigation for a seamless user experience, leading team discussions and sprint meetings to align development efforts, conducting a code review process for over 25 pull requests to uphold high-quality standards, and performing bug fixes and performance optimizations prior to final delivery.",
+      "We replaced the legacy system with a modern, full-stack web application designed for scalability and maintainability. The backend was developed with Express.js and MySQL (via Knex.js) to deliver secure and efficient API endpoints, while the frontend was built in React with a responsive layout closely matching Figma mockups. \n \n My contributions included developing multiple backend API endpoints for inventory and warehouse management, implementing three validated React forms for adding and editing inventory items, creating dynamic routing and navigation for a seamless user experience, leading team discussions and sprint meetings to align development efforts, conducting a code review process for over 25 pull requests to uphold high-quality standards, and performing bug fixes and performance optimizations prior to final delivery.",
     techStack: [
       "React",
       "React Router",
@@ -181,7 +181,12 @@ export const projectList: Project[] = [
       "Search and filter inventory by product name, category, or warehouse",
       "Responsive design",
     ],
-    // screenshots: ["/images/instock1.png", "/images/instock2.png"],
+    screenshots: [
+      "/images/instock-screenshots/instock1.png",
+      "/images/instock-screenshots/instock2.png",
+      "/images/instock-screenshots/instock3.png",
+      "/images/instock-screenshots/instock4.png",
+    ],
     obstacles:
       "Coordinating task dependencies within sprints and ensuring smooth integration between frontend and backend components. Managing merge conflicts during rapid development and aligning implementation with detailed Figma mockups.",
     learnings:
