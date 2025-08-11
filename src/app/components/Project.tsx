@@ -16,7 +16,7 @@ function Project() {
         </motion.div>
       )}
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6"
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
