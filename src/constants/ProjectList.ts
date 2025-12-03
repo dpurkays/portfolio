@@ -1,3 +1,8 @@
+export type ProjectLink = {
+  label: string;
+  href: string;
+};
+
 export type Project = {
   id: number;
   isFeatured?: boolean;
@@ -17,6 +22,7 @@ export type Project = {
   obstacles?: string;
   learnings?: string;
   improvements?: string;
+  extraLinks?: ProjectLink[];
 };
 
 export const projectList: Project[] = [
@@ -61,6 +67,53 @@ export const projectList: Project[] = [
   },
   {
     id: 2,
+    slug: "snack-guardian-ai",
+    title: "Snack Guardian AI",
+    description:
+      "Snack Guardian AI is a multi-agent system that helps people with GERD, acid reflux, IBS, and other digestive sensitivities choose snacks that feel safe, gentle, and satisfying. Built for the Google × Kaggle AI Agents Intensive, it focuses on trust, personalization, and clear reasoning.",
+    // video: "https://www.youtube.com/watch?v=PhwemMq-q8k",
+    image: "/images/snack-guardian-ai.png",
+    github: "https://github.com/dpurkays/snack-guardian-ai",
+    //live: "https://www.youtube.com/watch?v=PhwemMq-q8k",
+    challenge:
+      "People with digestive issues like GERD, acid reflux, and IBS constantly face decision fatigue around food. Most apps give generic advice, ignore personal triggers, and rarely explain why something is or isn’t safe.",
+    solution:
+      "Snack Guardian AI uses a team of collaborating agents to learn about a user’s symptoms, triggers, and preferences, then recommends snacks that feel both exciting and safe. One agent builds a gentle intake profile, another proposes snack options, and a safety-check agent reviews each suggestion for potential triggers. The system explains its reasoning in human terms, helping users build trust in both their food choices and the AI.",
+    techStack: [
+      "Python",
+      "Gemini 2.5 Flash Lite",
+      "Google’s Agent Development Kit (ADK)",
+      "Kaggle Notebook environment",
+      "Multi-agent architecture",
+      "Retrieval-augmented generation (RAG)",
+      "Sequential pipelines",
+      "Google Gemini API",
+    ],
+    features: [
+      "Multi-agent workflow that separates user profiling, snack brainstorming, and safety checks",
+      "Personalized snack recommendations based on symptoms, triggers, and preferences",
+      "Maintains continuity through a persistent memory layer",
+      "Provides a friendly conversational interface that simplifies decision-making",
+    ],
+    obstacles:
+      "Building Snack Guardian AI came with a few key challenges. Choosing the right orchestration flow required multiple iterations — I experimented with both the Dialogue Agent and a Sequential Pipeline to balance clarity, delegation, and consistent tool-calling behavior. Getting the model to reliably follow user intent was another hurdle; early versions produced full recipes or over-explained answers even when the user only wanted a simple, gentle snack. Tightening agent instructions and refining output constraints helped stabilize this. Finally, maintaining strict boundaries between agents took careful prompt design. Clearer task definitions, consistent JSON structures, and separating responsibilities ensured that agents stopped overlapping and stayed aligned with their individual roles.",
+    learnings:
+      "This project deepened my understanding of multi-agent system design, especially around defining clear agent roles and creating predictable orchestration flows. I learned how important it is to enforce consistent communication patterns, shared JSON structures, and well-scoped tasks so agents don’t overlap or contradict one another. I also became much more intentional about user-aligned behavior — refining prompts until the system prioritized gentle, safe, and supportive snack guidance rather than generic or overly broad answers.\n\nWorking within the Kaggle ADK pushed me to think carefully about observability, debugging tools, and guardrails, since agent interactions can become complex quickly. Ultimately, Snack Guardian AI strengthened my prompt engineering skills, improved my approach to building trustworthy AI experiences, and gave me a deeper appreciation for designing systems that support people dealing with real-world constraints like digestive sensitivities.",
+    improvements:
+      "If I had more time, I would expand Snack Guardian AI into a more robust and medically informed system. The first step would be growing the knowledge base to cover additional digestive conditions, more detailed trigger foods, and snack options across a wider range of cuisines. I would also refine the User Profile Agent so it can track patterns over time — learning which snacks consistently feel good and which ones cause discomfort.\n\nAnother improvement would be ingredient-level analysis. This could let users upload a nutrition label or take a photo of a snack, and the system would automatically flag potential triggers. A more advanced memory layer would also help the agent recognize historical patterns, adapt recommendations, and learn long-term snack preferences.\n\nFinally, I would build a lightweight web or mobile interface to make Snack Guardian AI more accessible. This would allow people with gut sensitivities to get quick, personalized snack guidance wherever they are, without needing to run a notebook or work inside the Kaggle environment.",
+    extraLinks: [
+      {
+        label: "Kaggle Notebook",
+        href: "https://www.kaggle.com/code/dulapurkaystha/snack-guardian-ai",
+      },
+      {
+        label: "Kaggle Write-up",
+        href: "https://www.kaggle.com/competitions/agents-intensive-capstone-project/writeups/snack-guardian-ai",
+      },
+    ],
+  },
+  {
+    id: 3,
     slug: "true-north-search",
     title: "True North Search 🍁",
     description:
@@ -90,7 +143,7 @@ export const projectList: Project[] = [
       "I learned how to collaborate effectively under extreme time constraints, aligning quickly on team roles and product goals. It pushed me to prioritize features, build rapidly with clarity, and contribute meaningfully to both frontend functionality and UX decisions. I also sharpened my communication and Git workflow skills during this fast-paced build.",
   },
   {
-    id: 3,
+    id: 4,
     slug: "auto-scroller",
     title: "Auto Scroller",
     description:
@@ -113,7 +166,7 @@ export const projectList: Project[] = [
       "I'd like to fine-tune the scroll speed for manhwa and webtoon readers by testing it with users and adjusting it based on real reading behavior. I also want to expand Auto Scroller to support long-form text, making it useful for reading articles, essays, and other written content in a hands-free way.",
   },
   {
-    id: 4,
+    id: 5,
     slug: "portfolio",
     title: "Personal Developer Portfolio",
     description:
@@ -145,7 +198,7 @@ export const projectList: Project[] = [
       "This project gave me hands-on experience with Next.js, Tailwind CSS, and Motion, deepening my understanding of component-based architecture and animation in modern web development. I also learned the importance of having a distinct UI mockup before development. Being indecisive with design led to time-consuming revisions.",
   },
   {
-    id: 5,
+    id: 6,
     slug: "instock",
     title: "InStock",
     description:

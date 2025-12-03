@@ -2,7 +2,7 @@ import { Project } from "@/constants/ProjectList";
 import * as motion from "motion/react-client";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { ContentCardProps } from "./ContentCard";
 import ProjectDetailsSection from "./ProjectDetailsSection";
 import VideoDemo from "./VideoDemo";
@@ -20,10 +20,11 @@ function ProjectDetails({
   solution,
   obstacles,
   learnings,
-  screenshots,
+  // screenshots,
   improvements,
+  extraLinks,
 }: Project) {
-  const hasScreenshots = screenshots && screenshots.length > 0;
+  // const hasScreenshots = screenshots && screenshots.length > 0;
 
   const insightCards = [
     obstacles && {
@@ -105,6 +106,30 @@ function ProjectDetails({
               See code
             </Link>
           )}
+          {extraLinks && extraLinks.length > 0 && (
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              transition={{ duration: 0.85 }}
+              className="flex flex-col md:flex-row gap-4"
+            >
+              {extraLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-2 items-center justify-center button-style transform hover:-translate-y-1"
+                >
+                  <FaExternalLinkAlt />
+                  {link.label}
+                </Link>
+              ))}
+            </motion.div>
+          )}
+
           <Link
             href="#details"
             className="flex gap-2 items-center justify-center button-style transform hover:-translate-y-1"
