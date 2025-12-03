@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { ContentCardProps } from "./ContentCard";
 import ProjectDetailsSection from "./ProjectDetailsSection";
+import ProjectGallery from "./ProjectGallery";
 import VideoDemo from "./VideoDemo";
 
 function ProjectDetails({
@@ -155,7 +156,7 @@ function ProjectDetails({
         {hasScreenshots && (
           <section className="flex flex-col items-center justify-center gap-4">
             <h2 className="section-title">Screenshots</h2>
-            {/* screenshots */}
+            <ProjectGallery screenshots={screenshots!} />
           </section>
         )}
         {hasInsights && (

@@ -17,35 +17,19 @@ export default function PageSection({
   titleClassName = "",
 }: PageSectionProps) {
   return (
-    <motion.section
-      id={id}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-      variants={{
-        hidden: {},
-        visible: {
-          transition: {
-            staggerChildren: 0.15,
-          },
-        },
-      }}
-      className={`section-style ${className}`}
-    >
+    <section id={id} className={`section-style ${className}`}>
       {title && (
         <motion.h2
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            visible: { opacity: 1, y: 0 },
-          }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.1 }} // lower amount = more reliable on mobile
           transition={{ duration: 0.6 }}
           className={`section-title ${titleClassName}`}
         >
           {title}
         </motion.h2>
       )}
-
       {children}
-    </motion.section>
+    </section>
   );
 }
