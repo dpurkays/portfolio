@@ -12,6 +12,7 @@ function ProjectDetails({
   description,
   image,
   video,
+  videoType,
   github,
   live,
   techStack,
@@ -56,7 +57,7 @@ function ProjectDetails({
             },
           },
         }}
-        className="min-h-screen flex flex-col items-center justify-center gap-4 text-center pb-16"
+        className="min-h-screen flex flex-col items-center justify-center gap-4 text-center pb-8"
       >
         <motion.h1
           variants={{
@@ -147,7 +148,7 @@ function ProjectDetails({
           animate="visible"
         >
           {video ? (
-            <VideoDemo video={video} />
+            <VideoDemo video={video} videoType={videoType} />
           ) : (
             <Image
               src={image}

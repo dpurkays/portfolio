@@ -57,7 +57,6 @@ function ProjectCard({
             <FaExternalLinkAlt />
           </Link>
         )}
-
         {video && (
           <Link
             href={`/projects/${slug}?autoplay=true#video`}

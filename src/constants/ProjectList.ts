@@ -11,6 +11,7 @@ export type Project = {
   description: string;
   image: string;
   video?: string;
+  videoType?: "file" | "youtube";
   github?: string;
   live?: string;
 
@@ -71,10 +72,10 @@ export const projectList: Project[] = [
     title: "Snack Guardian AI",
     description:
       "Snack Guardian AI is a multi-agent system that helps people with GERD, acid reflux, IBS, and other digestive sensitivities choose snacks that feel safe, gentle, and satisfying. Built for the Google × Kaggle AI Agents Intensive, it focuses on trust, personalization, and clear reasoning.",
-    // video: "https://www.youtube.com/watch?v=PhwemMq-q8k",
+    video: "https://www.youtube.com/embed/PhwemMq-q8k?si=OmR_2kqCn8jfTCnN",
+    videoType: "youtube",
     image: "/images/snack-guardian-ai.png",
     github: "https://github.com/dpurkays/snack-guardian-ai",
-    //live: "https://www.youtube.com/watch?v=PhwemMq-q8k",
     challenge:
       "People with digestive issues like GERD, acid reflux, and IBS constantly face decision fatigue around food. Most apps give generic advice, ignore personal triggers, and rarely explain why something is or isn’t safe.",
     solution:
